@@ -65,7 +65,6 @@ namespace CapaPresentacion
             this.textPrecioP2 = new System.Windows.Forms.TextBox();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
-            this.lblMyText = new System.Windows.Forms.Label();
             this.lblTotal2 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
@@ -81,7 +80,6 @@ namespace CapaPresentacion
             this.cbbCodigoEmpleado.Name = "cbbCodigoEmpleado";
             this.cbbCodigoEmpleado.Size = new System.Drawing.Size(165, 21);
             this.cbbCodigoEmpleado.TabIndex = 52;
-            this.cbbCodigoEmpleado.SelectedIndexChanged += new System.EventHandler(this.cbbCodigoEmpleado_SelectedIndexChanged);
             // 
             // label11
             // 
@@ -250,7 +248,6 @@ namespace CapaPresentacion
             this.addcliente.TabIndex = 55;
             this.addcliente.Text = "FACTURAR";
             this.addcliente.UseVisualStyleBackColor = false;
-            this.addcliente.Click += new System.EventHandler(this.addcliente_Click);
             // 
             // CantidaP2
             // 
@@ -342,7 +339,6 @@ namespace CapaPresentacion
             this.nomcliF.Name = "nomcliF";
             this.nomcliF.Size = new System.Drawing.Size(163, 20);
             this.nomcliF.TabIndex = 61;
-            this.nomcliF.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textnomp2
             // 
@@ -351,7 +347,6 @@ namespace CapaPresentacion
             this.textnomp2.Name = "textnomp2";
             this.textnomp2.Size = new System.Drawing.Size(165, 20);
             this.textnomp2.TabIndex = 62;
-            this.textnomp2.TextChanged += new System.EventHandler(this.textnomp2_TextChanged);
             // 
             // textDetaP2
             // 
@@ -386,18 +381,6 @@ namespace CapaPresentacion
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
             // 
-            // lblMyText
-            // 
-            this.lblMyText.AutoSize = true;
-            this.lblMyText.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMyText.Location = new System.Drawing.Point(6, 11);
-            this.lblMyText.Name = "lblMyText";
-            this.lblMyText.Size = new System.Drawing.Size(481, 124);
-            this.lblMyText.TabIndex = 65;
-            this.lblMyText.Text = "FACTURA  / DEVELOPERS  BILLS \r\nCorreo: developersbills@gmai.com \r\nContacto: 849-6" +
-    "27-8338\r\nDireccion: C/Eduado brito, # 10\r\n";
-            this.lblMyText.Visible = false;
-            // 
             // lblTotal2
             // 
             this.lblTotal2.AutoSize = true;
@@ -423,11 +406,12 @@ namespace CapaPresentacion
             // 
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.Location = new System.Drawing.Point(918, 237);
+            this.lblTotal.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblTotal.Location = new System.Drawing.Point(886, 236);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(73, 20);
+            this.lblTotal.Size = new System.Drawing.Size(19, 20);
             this.lblTotal.TabIndex = 68;
-            this.lblTotal.Text = "lbltotal2";
+            this.lblTotal.Text = "0";
             // 
             // txtTotalPago
             // 
@@ -439,7 +423,6 @@ namespace CapaPresentacion
             this.txtTotalPago.TabIndex = 54;
             this.txtTotalPago.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtTotalPago.Visible = false;
-            this.txtTotalPago.TextChanged += new System.EventHandler(this.txtTotalPago_TextChanged);
             // 
             // Facturacion
             // 
@@ -450,7 +433,6 @@ namespace CapaPresentacion
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.lblTotal2);
-            this.Controls.Add(this.lblMyText);
             this.Controls.Add(this.textPrecioP2);
             this.Controls.Add(this.textDetaP2);
             this.Controls.Add(this.textnomp2);
@@ -523,7 +505,6 @@ namespace CapaPresentacion
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumCodiVendedor;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
-        private System.Windows.Forms.Label lblMyText;
         private System.Windows.Forms.Label lblTotal2;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label lblTotal;
